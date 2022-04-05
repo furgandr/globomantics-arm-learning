@@ -14,3 +14,9 @@ jobs:
         uses: Azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Deploy Rosourece Group afu-fg-githutaction with AZ CLI
+        uses: Azure/cli@v1
+        with:
+          inlinescript: |
+            az deloyment sub create --location "Europe West" --template-file ./arm-template/resourcegroup.json
