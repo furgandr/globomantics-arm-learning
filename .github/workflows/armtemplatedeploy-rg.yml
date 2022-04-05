@@ -18,12 +18,8 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: Deploy Resource Group rg-githubaction
-        uses: Azure/arm-deploy@v1
+      - name: Deploy Rosourece Group afu-fg-githutaction with AZ CLI
+        uses: Azure/cli@v1
         with:
-          scope: subscription
-          subscriptionId: 0a933423-372a-475a-8082-86039eaf1d0f
-          region: West Europe
-          template: ./arm-template/resourcegroup.json
-          deploymentName: rg-githubaction
-
+          inlinescript: |
+            az deployment sub create --location "West Europe" --template-file ./arm-template/resourcegroup.json
