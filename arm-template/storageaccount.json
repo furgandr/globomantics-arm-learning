@@ -31,7 +31,7 @@
             "tags": {
                 "displayName": "[parameters('storageAccountName')]"
             },
-            "location": "[resourceGroup().location]",
+            "location": "[parameters('location')]",
             "kind": "StorageV2",
             "sku": {
                 "name": "[parameters('sku')]",
