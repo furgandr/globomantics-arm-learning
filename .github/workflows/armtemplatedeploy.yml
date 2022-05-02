@@ -35,8 +35,5 @@ jobs:
           subscriptionId: 0a933423-372a-475a-8082-86039eaf1d0f
           region: West Europe
           template: ./arm-template/storageaccount.json
-          parameters: 
-            sku=Standard:LRS
-            storaAccountName=afuglobostg002
-            location="West Europe"
+          parameters: ./arm-template/storageaccount.parameters.json
           deploymentMode: incremental
