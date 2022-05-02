@@ -14,7 +14,7 @@
             "metadata": {
                 "description": "Enter the name for the resource group"
             },
-            "defaultValue": "afu-fg-githubactions"
+            "defaultValue": "afu-githubactions"
         }
     },
     "functions": [],
