@@ -25,5 +25,5 @@ jobs:
           subscriptionId: 0a933423-372a-475a-8082-86039eaf1d0f
           region: West Europe
           template: ./arm-template/resourcegroup.json
-          deploymentName: rg-githubaction
+          deploymentName: rg-githubactions
 
